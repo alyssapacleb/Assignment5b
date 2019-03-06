@@ -2,63 +2,79 @@
 //  AnimalsTableViewController.swift
 //  Assignment5b
 //
-//  Created by Pacleb, Alyssa June N on 3/5/19.
+//  Created by Argandona Vite, Angel R on 3/5/19.
 //  Copyright © 2019 Pacleb, Alyssa June N. All rights reserved.
 //
 
 import UIKit
-struct whiteCells {
-    var id: Int
-    var text: String
-    var image: String
-}
-class AnimalsTableViewController: UITableViewController {
 
-    var whitecells = [
-        whiteCells(id:1, text:"Some text 1", image: "Cakes"),
-        whiteCells(id:2, text:"Some text 2", image: "Cookies"),
-        whiteCells(id:3, text:"Some text 3", image: "CupOfCoffee"),
-        whiteCells(id:4, text:"Some text 4", image: "CupOfTea")
-    ]
-    /*
+class Animal {
+    
+    var name: String
+    var scientificName : String
+    var _class : String
+    var size : String
+    var image : String
+    
+    init(name: String, scientificName: String, _class: String, size: String, image: String){
+        self.name = name
+        self.scientificName = scientificName
+        self._class = _class
+        self.size = size
+        self.image = image
+    }
+}
+
+class AnimalsTableViewController: UITableViewController {
+    
+    var animals = [Animal]()
+    
+    private func accessAnimalsPlist(){
+        let inputFile = Bundle.main.path(forResource:"AnimalsTable", ofType: "plist")
+        let inputArray = NSArray(contentsOfFile: inputFile!)
+        for input in inputArray as! [Dictionary<String, String>] {
+            animals.append(Animal(name: input["name"]!, scientificName: input["scientific name"]!, _class: input["class"]!, size: input["size"]!, image: input["image"]!))
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        accessAnimalsPlist()
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }*/
+        return 1
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return whitecells.count
+        return 8
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+        
+        var cell : UITableViewCell?
+        
+        if indexPath.row % 2 == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
+            let animal = animals[indexPath.row/2]
+            cell!.textLabel?.text = animal.name
+            cell!.imageView?.image = UIImage(named: animal.image)
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)
+            cell!.textLabel?.numberOfLines = 0
+            let animal = animals[(indexPath.row-1)/2]
+            let text = "Scientific Name: " + animal.scientificName + "\nClass: " + animal._class + "\nSize: " + animal.size
+            print(text)
+            cell!.textLabel?.text = text
+        }
 
-        let whitecell = whitecells[indexPath.row]
-        cell.detailTextLabel?.text = whitecell.text
-        cell.imageView?.image = UIImage(named: whitecell.image)
-
-        return cell
+        return cell!
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
