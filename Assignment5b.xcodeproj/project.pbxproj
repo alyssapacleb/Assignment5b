@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6038932422318DB7005DCFE2 /* AnimalsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038932222318DB7005DCFE2 /* AnimalsCollectionViewController.swift */; };
+		6038932722319021005DCFE2 /* AnimalsCollection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6038932622319021005DCFE2 /* AnimalsCollection.plist */; };
+		6038932922319BD6005DCFE2 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038932822319BD6005DCFE2 /* photoCell.swift */; };
 		6085F82B222EEE0900CFA425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085F82A222EEE0900CFA425 /* AppDelegate.swift */; };
 		6085F82D222EEE0900CFA425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6085F82C222EEE0900CFA425 /* ViewController.swift */; };
 		6085F830222EEE0900CFA425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6085F82E222EEE0900CFA425 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6038932222318DB7005DCFE2 /* AnimalsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsCollectionViewController.swift; sourceTree = "<group>"; };
+		6038932622319021005DCFE2 /* AnimalsCollection.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AnimalsCollection.plist; sourceTree = "<group>"; };
+		6038932822319BD6005DCFE2 /* photoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoCell.swift; sourceTree = "<group>"; };
 		6085F827222EEE0900CFA425 /* Assignment5b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5b.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6085F82A222EEE0900CFA425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6085F82C222EEE0900CFA425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				6085F836222EEE0A00CFA425 /* Info.plist */,
 				96F31C4C222F0367005B15D9 /* AnimalsTableViewController.swift */,
 				96F31C4E222F0831005B15D9 /* AnimalsTable.plist */,
+				6038932622319021005DCFE2 /* AnimalsCollection.plist */,
+				6038932222318DB7005DCFE2 /* AnimalsCollectionViewController.swift */,
+				6038932822319BD6005DCFE2 /* photoCell.swift */,
 			);
 			path = Assignment5b;
 			sourceTree = "<group>";
@@ -102,6 +111,7 @@
 				TargetAttributes = {
 					6085F826222EEE0900CFA425 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -128,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6038932722319021005DCFE2 /* AnimalsCollection.plist in Resources */,
 				6085F835222EEE0A00CFA425 /* LaunchScreen.storyboard in Resources */,
 				96F31C4F222F0831005B15D9 /* AnimalsTable.plist in Resources */,
 				6085F832222EEE0A00CFA425 /* Assets.xcassets in Resources */,
@@ -142,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6038932922319BD6005DCFE2 /* photoCell.swift in Sources */,
+				6038932422318DB7005DCFE2 /* AnimalsCollectionViewController.swift in Sources */,
 				6085F82D222EEE0900CFA425 /* ViewController.swift in Sources */,
 				96F31C4D222F0367005B15D9 /* AnimalsTableViewController.swift in Sources */,
 				6085F82B222EEE0900CFA425 /* AppDelegate.swift in Sources */,
@@ -288,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Assignment5b/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -296,6 +310,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Assignment5b.Assignment5b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment5b/Assignment5b-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Assignment5b/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Assignment5b.Assignment5b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment5b/Assignment5b-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

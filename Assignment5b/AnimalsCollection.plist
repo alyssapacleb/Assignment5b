@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>bearCol1</string>
+		<key>caption</key>
+		<string>it is a bear</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>bearCol2</string>
+		<key>caption</key>
+		<string>A happy brown bear</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>bearCol3</string>
+		<key>caption</key>
+		<string>Happy Panda</string>
+	</dict>
+</array>
+</plist>
