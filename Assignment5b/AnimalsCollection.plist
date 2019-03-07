@@ -3,22 +3,36 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>imageName</key>
-		<string>bearCol1</string>
-		<key>caption</key>
-		<string>it is a bear</string>
+		<key>sharkCol1</key>
+		<string>Shark!</string>
+		<key>sharkCol2</key>
+		<string>shark</string>
+		<key>sharkCol3</key>
+		<string>Shark</string>
 	</dict>
 	<dict>
-		<key>imageName</key>
-		<string>bearCol2</string>
-		<key>caption</key>
+		<key>bearCol1</key>
+		<string>It&apos;s a bear!</string>
+		<key>bearCol2</key>
 		<string>A happy brown bear</string>
+		<key>bearCol3</key>
+		<string>Bear</string>
 	</dict>
 	<dict>
-		<key>imageName</key>
-		<string>bearCol3</string>
-		<key>caption</key>
-		<string>Happy Panda</string>
+		<key>lionCol1</key>
+		<string>lion</string>
+		<key>lionCol2</key>
+		<string>Lion</string>
+		<key>lionCol3</key>
+		<string>Lion!</string>
+	</dict>
+	<dict>
+		<key>wolfCol1</key>
+		<string>wolf</string>
+		<key>wolfCol2</key>
+		<string>Wolf</string>
+		<key>wolfCol3</key>
+		<string>Wolf!</string>
 	</dict>
 </array>
 </plist>

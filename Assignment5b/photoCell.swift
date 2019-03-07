@@ -11,4 +11,10 @@ import UIKit
 class photoCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageCaption: UILabel!
+    
+    func displayContent(image: UIImage, caption: String){
+        imageView.image = image
+        imageCaption.text = caption
+    }
 }
