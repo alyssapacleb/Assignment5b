@@ -8,8 +8,10 @@
 
 import UIKit
 
+// Class that defines each Animal.
 class Animal {
     
+    // Description of animal to be displayed
     var name: String
     var scientificName : String
     var _class : String
@@ -27,8 +29,10 @@ class Animal {
 
 class AnimalsTableViewController: UITableViewController {
     
+    // Array of each animal class
     var animals = [Animal]()
     
+    // Take data from the plist, convert each item into an Animal class.
     private func accessAnimalsPlist(){
         let inputFile = Bundle.main.path(forResource:"AnimalsTable", ofType: "plist")
         let inputArray = NSArray(contentsOfFile: inputFile!)
@@ -37,6 +41,7 @@ class AnimalsTableViewController: UITableViewController {
         }
     }
     
+    // set up the first page with the animals array.
     override func viewDidLoad() {
         super.viewDidLoad()
         accessAnimalsPlist()
@@ -49,27 +54,36 @@ class AnimalsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
+    // The number of rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
+        // The number of rows is the number of animals multiplied by 2.
         return 2*animals.count
     }
-
+    
+    // Populate the contents of each cell.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // Each cell is assigned as the variable "cell"
         var cell : UITableViewCell?
         
+        // If the cell is even (aka 0, 2, 4, 6): This is an image cell
         if indexPath.row % 2 == 0 {
             cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
             let animal = animals[indexPath.row/2]
             cell!.textLabel?.text = animal.name
             cell!.imageView?.image = UIImage(named: animal.image)
-        } else {
+        }
+        
+        // if this is an odd cell (aka 1, 3, 5, 7): this is an info cell
+        else {
             cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)
             cell!.textLabel?.numberOfLines = 0
             let animal = animals[(indexPath.row-1)/2]
             let text = "Scientific Name: " + animal.scientificName + "\nClass: " + animal._class + "\nSize: " + animal.size
-            print(text)
+            //print(text)
             cell!.textLabel?.text = text
         }
 
