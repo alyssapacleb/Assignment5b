@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>sharkCol1</key>
-		<string>This is a shark</string>
+		<string>Jim and Shark are friends</string>
 		<key>sharkCol2</key>
-		<string>This is also a shark, but a different one from the first</string>
+		<string>This shark skipped lunch</string>
 		<key>sharkCol3</key>
-		<string>Fun fact: this shark is distantly related to the first shark, but they&apos;re not on speaking terms</string>
+		<string>This shark is glowing</string>
 	</dict>
 </array>
 </plist>

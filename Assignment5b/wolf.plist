@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>wolfCol1</key>
-		<string>Wolf</string>
+		<string>This is a chilly wolf</string>
 		<key>wolfCol2</key>
-		<string>Woof</string>
+		<string>Sweet Puppers</string>
 		<key>wolfCol3</key>
-		<string>Wolves</string>
+		<string>He is hangry</string>
 	</dict>
 </array>
 </plist>
