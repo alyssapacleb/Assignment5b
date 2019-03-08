@@ -21,6 +21,8 @@
 		F1C35BEF2232207F0061B978 /* lion.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1C35BEB2232207F0061B978 /* lion.plist */; };
 		F1C35BF02232207F0061B978 /* wolf.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1C35BEC2232207F0061B978 /* wolf.plist */; };
 		F1C35BF12232207F0061B978 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1C35BED2232207F0061B978 /* bear.plist */; };
+		F1C35BF32232E12E0061B978 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C35BF22232E12D0061B978 /* CollectionHeader.swift */; };
+		F1C35BF52232E2CD0061B978 /* CollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C35BF42232E2CD0061B978 /* CollectionFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F1C35BEB2232207F0061B978 /* lion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lion.plist; sourceTree = "<group>"; };
 		F1C35BEC2232207F0061B978 /* wolf.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wolf.plist; sourceTree = "<group>"; };
 		F1C35BED2232207F0061B978 /* bear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bear.plist; sourceTree = "<group>"; };
+		F1C35BF22232E12D0061B978 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
+		F1C35BF42232E2CD0061B978 /* CollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		6085F829222EEE0900CFA425 /* Assignment5b */ = {
 			isa = PBXGroup;
 			children = (
+				F1C35BF22232E12D0061B978 /* CollectionHeader.swift */,
 				F1C35BED2232207F0061B978 /* bear.plist */,
 				F1C35BEB2232207F0061B978 /* lion.plist */,
 				F1C35BEA2232207F0061B978 /* shark.plist */,
@@ -79,6 +84,7 @@
 				6085F82A222EEE0900CFA425 /* AppDelegate.swift */,
 				6085F82C222EEE0900CFA425 /* ViewController.swift */,
 				6085F82E222EEE0900CFA425 /* Main.storyboard */,
+				F1C35BF42232E2CD0061B978 /* CollectionFooter.swift */,
 				6085F831222EEE0A00CFA425 /* Assets.xcassets */,
 				6085F833222EEE0A00CFA425 /* LaunchScreen.storyboard */,
 				6085F836222EEE0A00CFA425 /* Info.plist */,
@@ -169,10 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C35BF32232E12E0061B978 /* CollectionHeader.swift in Sources */,
 				6038932922319BD6005DCFE2 /* photoCell.swift in Sources */,
 				96C3D8172231CD67003DE841 /* AnimalsViewController.swift in Sources */,
 				6085F82D222EEE0900CFA425 /* ViewController.swift in Sources */,
 				96F31C4D222F0367005B15D9 /* AnimalsTableViewController.swift in Sources */,
+				F1C35BF52232E2CD0061B978 /* CollectionFooter.swift in Sources */,
 				6085F82B222EEE0900CFA425 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
