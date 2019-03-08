@@ -94,7 +94,7 @@ class AnimalsTableViewController: UITableViewController {
             cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)
             cell!.textLabel?.numberOfLines = 0
             let animal = animals[(indexPath.row-1)/2]
-            let text = "Scientific Name: " + animal.scientificName + "\nClass: " + animal._class + "\nSize: " + animal.size
+            let text = "Scientific Name:      " + animal.scientificName + "\nClass:                        " + animal._class + "\nSize:                          " + animal.size
             //print(text)
             cell!.textLabel?.text = text
         }
