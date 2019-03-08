@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sharkCol1</key>
+		<string>This is a shark</string>
+		<key>sharkCol2</key>
+		<string>This is also a shark, but a different one from the first</string>
+		<key>sharkCol3</key>
+		<string>Fun fact: this shark is distantly related to the first shark, but they&apos;re not on speaking terms</string>
+	</dict>
+</array>
+</plist>

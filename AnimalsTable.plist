@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>footer</key>
+		<string>Fish are friends, not food</string>
+		<key>gallery_name</key>
+		<string>Shark Images</string>
+		<key>identifier</key>
+		<string>shark</string>
+		<key>name</key>
+		<string>Great White Shark</string>
+		<key>scientific name</key>
+		<string>Carcharodon carcharias</string>
+		<key>class</key>
+		<string>Chondrichthyes</string>
+		<key>size</key>
+		<string>680.0 kg</string>
+		<key>image</key>
+		<string>great-white-shark-1</string>
+	</dict>
+	<dict>
+		<key>footer</key>
+		<string>Bare bears bear bearings</string>
+		<key>gallery_name</key>
+		<string>Bear Images</string>
+		<key>identifier</key>
+		<string>bear</string>
+		<key>name</key>
+		<string>Brown Bear</string>
+		<key>scientific name</key>
+		<string>Ursus arctos</string>
+		<key>class</key>
+		<string>Mammalia</string>
+		<key>size</key>
+		<string>217.0 kg</string>
+		<key>image</key>
+		<string>brown-bear-1</string>
+	</dict>
+	<dict>
+		<key>footer</key>
+		<string>King of the jungle</string>
+		<key>gallery_name</key>
+		<string>Lion Images</string>
+		<key>identifier</key>
+		<string>lion</string>
+		<key>name</key>
+		<string>Lion</string>
+		<key>scientific name</key>
+		<string>Panthera leo</string>
+		<key>class</key>
+		<string>Mammalia</string>
+		<key>size</key>
+		<string>200.0 kg</string>
+		<key>image</key>
+		<string>lion-1</string>
+	</dict>
+	<dict>
+		<key>footer</key>
+		<string>Liam Neeson hates wolves</string>
+		<key>gallery_name</key>
+		<string>Wolf Images</string>
+		<key>identifier</key>
+		<string>wolf</string>
+		<key>name</key>
+		<string>Wolf</string>
+		<key>scientific name</key>
+		<string>Canis lupus</string>
+		<key>class</key>
+		<string>Mammalia</string>
+		<key>size</key>
+		<string>36.0 kg</string>
+		<key>image</key>
+		<string>wolf-1</string>
+	</dict>
+</array>
+</plist>

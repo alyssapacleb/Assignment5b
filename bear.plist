@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bearCol6</key>
+		<string>BEAR BEAR BEAR</string>
+		<key>bearCol5</key>
+		<string>BEAR BEAR</string>
+		<key>bearCol4</key>
+		<string>BEAR</string>
+		<key>bearCol1</key>
+		<string>Bears can run at speeds greater than 1 mph</string>
+		<key>bearCol2</key>
+		<string>Some bears can climb trees, presumably</string>
+		<key>bearCol3</key>
+		<string>Bears are also known as &quot;osos&quot; in some cultures, specifically Spanish-speaking ones</string>
+	</dict>
+</array>
+</plist>
