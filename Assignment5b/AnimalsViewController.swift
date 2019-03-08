@@ -20,7 +20,7 @@ class GalleryItem {
     }
 }
 
-class AnimalsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class AnimalsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
 
     private let reuseIdentifier = "animalCollectionCell"
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -95,5 +95,4 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Pass the selected object to the new view controller.
     }
     */
-
 }

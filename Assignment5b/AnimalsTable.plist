@@ -6,7 +6,7 @@
 		<key>name</key>
 		<string>Great White Shark</string>
 		<key>scientific name</key>
-		<string>Carcharodon</string>
+		<string>Carcharodon carcharias</string>
 		<key>class</key>
 		<string>Chondrichthyes</string>
 		<key>size</key>
@@ -22,7 +22,7 @@
 		<key>class</key>
 		<string>Mammalia</string>
 		<key>size</key>
-		<string>180.0 kg</string>
+		<string>217.0 kg</string>
 		<key>image</key>
 		<string>brown-bear-1</string>
 	</dict>
@@ -34,7 +34,7 @@
 		<key>class</key>
 		<string>Mammalia</string>
 		<key>size</key>
-		<string>200 kg</string>
+		<string>200.0 kg</string>
 		<key>image</key>
 		<string>lion-1</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>class</key>
 		<string>Mammalia</string>
 		<key>size</key>
-		<string>45 kg</string>
+		<string>36.0 kg</string>
 		<key>image</key>
 		<string>wolf-1</string>
 	</dict>

@@ -45,6 +45,7 @@ class AnimalsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         accessAnimalsPlist()
+        tableView.rowHeight = 80
         // Do any additional setup after loading the view, typically from a nib.
     }
 

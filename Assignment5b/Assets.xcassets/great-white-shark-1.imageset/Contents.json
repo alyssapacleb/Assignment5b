@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "great-white-shark-1.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "great-white-shark-1.jpeg",
       "scale" : "2x"
     },
     {
