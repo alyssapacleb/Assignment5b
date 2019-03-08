@@ -34,7 +34,7 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
     // Take data from the plist, convert each item into an Animal class.
     private func accessAnimalsCollectionPlist(){
         let currentIdent = currentGallery.currentIdentifier
-        collectionHeader.title? = currentGallery.currentGalleryName
+        //collectionHeader.title? = currentGallery.currentGalleryName
         let inputColFile = Bundle.main.path(forResource: currentIdent, ofType: "plist")
         let inputColArray = NSArray(contentsOfFile: inputColFile!)
         for input in inputColArray as! [Dictionary<String, String>] {
@@ -86,7 +86,20 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        switch kind {
+        if kind == UICollectionElementKindSectionHeader {
+            let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CollectionHeader", for: indexPath) as! CollectionHeader
+            sectionHeader.sectionHeaderLabel.text = currentGallery.currentGalleryName
+            return sectionHeader
+        }
+        else if kind == UICollectionElementKindSectionFooter {
+            let sectionFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CollectionFooter", for: indexPath) as! CollectionFooter
+            sectionFooter.sectionFooterLabel.text = currentGallery.currentGalleryFooter
+            return sectionFooter
+        }
+        else {assert(false, "Unexpected element kind")}
+        
+        return UICollectionReusableView()
+        /*switch kind {
         
         case UICollectionElementKindSectionHeader:
         
@@ -104,7 +117,7 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
             
         default:
             assert(false, "Unexpected element kind")
-        }
+        }*/
     }
     
     override func didReceiveMemoryWarning() {

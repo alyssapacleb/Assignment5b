@@ -11,6 +11,12 @@
 		<string>Shark</string>
 	</dict>
 	<dict>
+		<key>bearCol6</key>
+		<string>bear bear bear</string>
+		<key>bearCol5</key>
+		<string>bear bear</string>
+		<key>bearCol4</key>
+		<string>Also bear</string>
 		<key>bearCol1</key>
 		<string>It&apos;s a bear!</string>
 		<key>bearCol2</key>

@@ -3,6 +3,12 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>bearCol6</key>
+		<string>BEAR BEAR BEAR</string>
+		<key>bearCol5</key>
+		<string>BEAR BEAR</string>
+		<key>bearCol4</key>
+		<string>BEAR</string>
 		<key>bearCol1</key>
 		<string>Bears can run at speeds greater than 1 mph</string>
 		<key>bearCol2</key>

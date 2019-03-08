@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>footer</key>
+		<string>Fish are friends, not food</string>
 		<key>gallery_name</key>
 		<string>Shark Images</string>
 		<key>identifier</key>
@@ -19,6 +21,8 @@
 		<string>great-white-shark-1</string>
 	</dict>
 	<dict>
+		<key>footer</key>
+		<string>Bare bears bear bearings</string>
 		<key>gallery_name</key>
 		<string>Bear Images</string>
 		<key>identifier</key>
@@ -35,6 +39,8 @@
 		<string>brown-bear-1</string>
 	</dict>
 	<dict>
+		<key>footer</key>
+		<string>King of the jungle</string>
 		<key>gallery_name</key>
 		<string>Lion Images</string>
 		<key>identifier</key>
@@ -51,6 +57,8 @@
 		<string>lion-1</string>
 	</dict>
 	<dict>
+		<key>footer</key>
+		<string>Liam Neeson hates wolves</string>
 		<key>gallery_name</key>
 		<string>Wolf Images</string>
 		<key>identifier</key>
