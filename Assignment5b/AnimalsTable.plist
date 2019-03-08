@@ -18,11 +18,11 @@
 		<key>name</key>
 		<string>Brown Bear</string>
 		<key>scientific name</key>
-		<string>bear</string>
+		<string>Ursus arctos</string>
 		<key>class</key>
-		<string>bears</string>
+		<string>Mammalia</string>
 		<key>size</key>
-		<string>999 kg</string>
+		<string>180.0 kg</string>
 		<key>image</key>
 		<string>brown-bear-1</string>
 	</dict>
@@ -30,11 +30,11 @@
 		<key>name</key>
 		<string>Lion</string>
 		<key>scientific name</key>
-		<string>Lion</string>
+		<string>Panthera leo</string>
 		<key>class</key>
-		<string>lions</string>
+		<string>Mammalia</string>
 		<key>size</key>
-		<string>999 kg</string>
+		<string>200 kg</string>
 		<key>image</key>
 		<string>lion-1</string>
 	</dict>
@@ -42,11 +42,11 @@
 		<key>name</key>
 		<string>Wolf</string>
 		<key>scientific name</key>
-		<string>wolf</string>
+		<string>Canis lupus</string>
 		<key>class</key>
-		<string>wolves</string>
+		<string>Mammalia</string>
 		<key>size</key>
-		<string>999 kg</string>
+		<string>45 kg</string>
 		<key>image</key>
 		<string>wolf-1</string>
 	</dict>
