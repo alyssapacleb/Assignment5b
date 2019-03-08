@@ -12,19 +12,28 @@ import UIKit
 class Animal {
     
     // Description of animal to be displayed
+    var gallery_name: String
+    var identifier: String
     var name: String
     var scientificName : String
     var _class : String
     var size : String
     var image : String
     
-    init(name: String, scientificName: String, _class: String, size: String, image: String){
+    init(gallery_name: String, identifier: String, name: String, scientificName: String, _class: String, size: String, image: String){
+        self.gallery_name = gallery_name
+        self.identifier = identifier
         self.name = name
         self.scientificName = scientificName
         self._class = _class
         self.size = size
         self.image = image
     }
+}
+
+struct currentGallery {
+    static var currentIdentifier = "shark"
+    static var currentGalleryName = "Shark Images"
 }
 
 class AnimalsTableViewController: UITableViewController {
@@ -37,13 +46,15 @@ class AnimalsTableViewController: UITableViewController {
         let inputFile = Bundle.main.path(forResource:"AnimalsTable", ofType: "plist")
         let inputArray = NSArray(contentsOfFile: inputFile!)
         for input in inputArray as! [Dictionary<String, String>] {
-            animals.append(Animal(name: input["name"]!, scientificName: input["scientific name"]!, _class: input["class"]!, size: input["size"]!, image: input["image"]!))
+            animals.append(Animal(gallery_name: input["gallery_name"]!, identifier: input["identifier"]!, name: input["name"]!, scientificName: input["scientific name"]!, _class: input["class"]!, size: input["size"]!, image: input["image"]!))
         }
     }
     
     // set up the first page with the animals array.
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         accessAnimalsPlist()
         tableView.rowHeight = 80
         // Do any additional setup after loading the view, typically from a nib.
@@ -91,6 +102,18 @@ class AnimalsTableViewController: UITableViewController {
         return cell!
     }
 
+    
+    // Determine which animal's gallery to display based on which cell was selected
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row % 2 == 0 {
+            currentGallery.currentIdentifier = animals[indexPath.row/2].identifier
+            currentGallery.currentGalleryName = animals[indexPath.row/2].gallery_name
+            print("Animal selected: \(currentGallery.currentIdentifier)")
+        } else {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -133,6 +156,7 @@ class AnimalsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
     }
     */
 

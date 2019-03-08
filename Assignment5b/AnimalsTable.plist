@@ -3,6 +3,10 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>gallery_name</key>
+		<string>Shark Images</string>
+		<key>identifier</key>
+		<string>shark</string>
 		<key>name</key>
 		<string>Great White Shark</string>
 		<key>scientific name</key>
@@ -15,6 +19,10 @@
 		<string>great-white-shark-1</string>
 	</dict>
 	<dict>
+		<key>gallery_name</key>
+		<string>Bear Images</string>
+		<key>identifier</key>
+		<string>bear</string>
 		<key>name</key>
 		<string>Brown Bear</string>
 		<key>scientific name</key>
@@ -27,6 +35,10 @@
 		<string>brown-bear-1</string>
 	</dict>
 	<dict>
+		<key>gallery_name</key>
+		<string>Lion Images</string>
+		<key>identifier</key>
+		<string>lion</string>
 		<key>name</key>
 		<string>Lion</string>
 		<key>scientific name</key>
@@ -39,6 +51,10 @@
 		<string>lion-1</string>
 	</dict>
 	<dict>
+		<key>gallery_name</key>
+		<string>Wolf Images</string>
+		<key>identifier</key>
+		<string>wolf</string>
 		<key>name</key>
 		<string>Wolf</string>
 		<key>scientific name</key>

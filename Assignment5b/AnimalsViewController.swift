@@ -29,13 +29,17 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
     var imagecollection = [GalleryItem]()
     
     @IBOutlet weak var AnimalsCollectionView: UICollectionView!
+    @IBOutlet weak var collectionHeader: UINavigationItem!
     
     // Take data from the plist, convert each item into an Animal class.
     private func accessAnimalsCollectionPlist(){
-        let inputColFile = Bundle.main.path(forResource:"AnimalsCollection", ofType: "plist")
+        let currentIdent = currentGallery.currentIdentifier
+        collectionHeader.title? = currentGallery.currentGalleryName
+        let inputColFile = Bundle.main.path(forResource: currentIdent, ofType: "plist")
         let inputColArray = NSArray(contentsOfFile: inputColFile!)
         for input in inputColArray as! [Dictionary<String, String>] {
             for (key,value) in input {
+                print("\(key), \(value)")
                 imagecollection.append(GalleryItem(imageName: key, caption: value))
             }
         }
@@ -78,6 +82,29 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.displayContent(image: UIImage(named: collection.imageName)!, caption: collection.caption)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+        
+        case UICollectionElementKindSectionHeader:
+        
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind , withReuseIdentifier: "Header", for: indexPath)
+            
+            headerView.backgroundColor = UIColor.blue
+            return headerView
+        
+        case UICollectionElementKindSectionFooter:
+            
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Footer", for: indexPath)
+            
+            footerView.backgroundColor = UIColor.green
+            return footerView
+            
+        default:
+            assert(false, "Unexpected element kind")
+        }
     }
     
     override func didReceiveMemoryWarning() {
